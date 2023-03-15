@@ -1,0 +1,7 @@
+{
+  "no-cors": false,
+  "quiet": true,
+  "read-only": true,
+  "static": "./api/assets",
+  "watch": false
+}
