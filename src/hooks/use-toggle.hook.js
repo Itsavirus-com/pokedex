@@ -5,7 +5,7 @@ export const useToggle = (initialState = false) => {
 
   const show = useCallback(() => setIsOpen(true), [])
   const hide = useCallback(() => setIsOpen(false), [])
-  const toggle = useCallback(() => setIsOpen(), [isOpen])
+  const toggle = useCallback(() => setIsOpen(!isOpen), [isOpen])
 
   return [isOpen, toggle, show, hide]
 }

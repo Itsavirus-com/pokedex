@@ -1,11 +1,24 @@
-import React from "react"
+import { Col, Container, Row } from "react-bootstrap"
+import { Link } from "react-router-dom"
+import { ListPokemon } from "../components/list-pokemon"
 
 export const PokemonList = () => {
-  fetch(`${process.env.API_URL}/pokemons`)
-    .then((res) => res.json())
-    .then((data) => console.log(data))
-
   return (
-    <div>PokemonList</div>
+    <Container>
+      <Row>
+        <Col className="top-bar">
+          <Link to="/">
+            <i className="uil-arrow-left text-black"></i>
+          </Link>
+        </Col>
+        <Col className="text-end top-bar">
+          <Link to="#">
+            <i className="uil-align-right text-black"></i>
+          </Link>
+        </Col>
+      </Row>
+      <h1>Pokedex</h1>
+      <ListPokemon />
+    </Container>
   )
 }
