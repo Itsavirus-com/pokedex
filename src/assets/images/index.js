@@ -1,1 +1,12 @@
-export const logo = require('./logo.png')
+export const logo = require("./logo.png");
+export const one = require("./1.png");
+export const love = require("./love.png");
+export const backWH = require("./back-white.png");
+export const back = require("./back.svg");
+export const menu = require("./menu.svg");
+export const detailOne = require("./detail1.png");
+export const male = require("./Vector.svg");
+export const female = require("./female.svg");
+export const detailTwo = require("./detail2.svg");
+export const bg = require("./bg.svg");
+export const bg1 = require("./bg1.svg");

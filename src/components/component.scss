@@ -1,0 +1,106 @@
+.cd {
+  margin-bottom: 10px;
+  &__card {
+    display: flex;
+    border-radius: 6px;
+    padding: 10px;
+
+    &--green {
+      background-color: #37c28f;
+    }
+    &--red {
+      background-color: #e76969;
+    }
+    &--blue {
+      background-color: #69b2e7;
+    }
+    &--yellow {
+      background-color: #ffc56f;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 30px;
+
+    &__skill {
+      padding: 2px 6px;
+      border-radius: 6px;
+
+      margin-right: 6px;
+      font-weight: 600;
+      font-size: 8px;
+      color: #fff;
+
+      &--green {
+        background-color: #34b888;
+      }
+      &--red {
+        background-color: #e05959;
+      }
+      &--blue {
+        background-color: #5ca6dd;
+      }
+      &--yellow {
+        background-color: #f7b759;
+      }
+    }
+  }
+  &__img1 {
+    position: absolute;
+    margin-left: 16%;
+  }
+  &__img {
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 8%;
+  }
+}
+
+.rate {
+  margin-left: 10px;
+  width: 100%;
+  height: 6px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+
+  &__rate {
+    display: flex;
+    align-items: center;
+  }
+
+  &__in {
+    height: 6px;
+    border-radius: 10px;
+
+    &--45 {
+      background-color: #f46f6f;
+      width: 45%;
+    }
+    &--60 {
+      background-color: #37c28f;
+      width: 60%;
+    }
+    &--48 {
+      background-color: #f46f6f;
+      width: 48%;
+    }
+    &--66 {
+      background-color: #37c28f;
+      width: 66%;
+    }
+    &--45 {
+      background-color: #f46f6f;
+      width: 45%;
+    }
+    &--80 {
+      background-color: #37c28f;
+      width: 80%;
+    }
+  }
+}
