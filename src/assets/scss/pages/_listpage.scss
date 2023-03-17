@@ -1,0 +1,52 @@
+.text-badge{
+  margin-top: -10;
+  padding: 2px;
+  box-shadow: inset;
+}
+
+@include media-breakpoint-down(xs) {
+  .img-size{
+    width: 50px;
+    position: absolute;
+    right: 10;
+    bottom: 10;
+  }
+  }
+
+@include media-breakpoint-down(xs) {
+.img-pokemon{
+  position: absolute;
+  right: 10;
+  bottom: 10;
+  width: 75px;
+  height: auto;
+}
+}
+
+@include media-breakpoint-down(sm) {
+  .img-pokemon{
+    position: absolute;
+    right: 10;
+    bottom: 10;
+  }
+  }
+
+.card-size{
+  height: 1.2*100%;
+}
+
+.bg-hijau{
+  background-color: #37C28F;
+}
+
+.bg-merah{
+  background-color: #E76969;
+}
+
+.bg-biru{
+  background-color: #69B2E7;
+}
+
+.bg-kuning{
+  background-color: #FFC56F;
+}

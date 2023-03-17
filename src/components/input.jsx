@@ -2,7 +2,7 @@ import React from 'react'
 import { Form } from 'react-bootstrap'
 
 export const Input = (props) => {
-  const { label, name, containerClass, children, error } = props
+  const { label, name, containerClass, children, error,placeholder } = props
 
   return (
     <Form.Group className={containerClass}>
@@ -12,6 +12,7 @@ export const Input = (props) => {
         id={name}
         as='input'
         isInvalid={!!error?.message}
+        placeholder={placeholder}
       >
         {children}
       </Form.Control>

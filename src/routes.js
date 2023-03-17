@@ -15,7 +15,7 @@ export const Routes = () => {
       element: <PokemonList />,
     },
     {
-      path: '/pokemons/:id',
+      path: '/details',
       element: <PokemonDetails />,
     },
   ])

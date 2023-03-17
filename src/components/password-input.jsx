@@ -5,7 +5,7 @@ import { Form, InputGroup } from 'react-bootstrap'
 import { useToggle } from 'hooks/use-toggle.hook'
 
 export const PasswordInput = (props) => {
-  const { label, name, containerClass, error } = props
+  const { label, name, containerClass, error,placeholder } = props
 
   const [showPassword, togglePassword] = useToggle()
 
@@ -18,6 +18,7 @@ export const PasswordInput = (props) => {
           id={name}
           as='input'
           isInvalid={!!error?.message}
+          placeholder={placeholder}
           type={showPassword ? 'text' : 'password'}
         />
         <div
@@ -25,7 +26,7 @@ export const PasswordInput = (props) => {
           onClick={togglePassword}
           role="button"
         >
-          <i className={showPassword ? 'uil-eye-slash' : 'uil-eye'} />
+          <i className={!showPassword ? 'uil-eye-slash' : 'uil-eye'} />
         </div>
       </InputGroup>
 
