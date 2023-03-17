@@ -2,7 +2,7 @@ import React from 'react'
 import { Form } from 'react-bootstrap'
 
 export const Input = (props) => {
-  const { label, name, containerClass, children, error } = props
+  const { label, name, placeholder, containerClass, onChange, children, error } = props
 
   return (
     <Form.Group className={containerClass}>
@@ -12,11 +12,16 @@ export const Input = (props) => {
         id={name}
         as='input'
         isInvalid={!!error?.message}
-      >
+        placeholder={placeholder}
+        onChange={onChange}
+      />
         {children}
-      </Form.Control>
 
-      {error?.message && <Form.Control.Feedback type='invalid'>{error.message}</Form.Control.Feedback>}
+        {error && (
+        <Form.Control.Feedback className='d-block' type='invalid'>
+          {error.message}
+        </Form.Control.Feedback>
+      )}
     </Form.Group>
   )
 }

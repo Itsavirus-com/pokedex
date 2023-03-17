@@ -7,6 +7,8 @@ export const PokemonDetails = () => {
   console.log('pokemonId', pokemonId)
 
   return (
-    <div>PokemonDetails</div>
+    <div> Testing </div>
+
   )
 }
+
