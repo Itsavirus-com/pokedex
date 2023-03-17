@@ -1,0 +1,81 @@
+.pokemon-list{
+    &__title h1{
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 700;
+    }
+
+    &__list {
+        margin-top: 30px;
+				display: flex;
+				margin: 0;
+				margin-top: 20px;
+
+			&--card {
+				background-color: #37C28F;
+				padding: 10px;
+			}
+
+			&--title {
+				color: #FAFAFA;
+				font-weight: 700;
+				font-size: 30px;
+				padding: 28px 0 0 20px;
+			}
+
+			&--type {
+				display: flex;
+				z-index: 3;
+
+				&-one p{
+					color: #FFFFFF;
+					font-weight: 600;
+					font-size: 16px;
+					background-color: #34B888;
+					border-radius: 20px;
+					margin: 0 8px 0 20px;
+					width: 100px;
+					padding: 5px;
+					text-align: center;
+				}
+
+				&-two p{
+					color: #FFFFFF;
+					font-weight: 600;
+					font-size: 16px;
+					background-color: #34B888;
+					border-radius: 20px;
+					margin: 0 8px 0 0;
+					width: 100px;
+					padding: 5px;
+					text-align: center;
+				}
+			}
+    }
+
+		&__vector {
+			.vector {
+				width: auto;
+				height: 200px;
+				float: right;
+				margin-right: 10px;
+				z-index: 0;
+				margin-top: -30px;
+				opacity: 0.1;
+    		filter: alpha(opacity=80);
+			}
+		}
+
+		&__image {
+			z-index: 1;
+			margin-right: 20px;
+
+			.image {
+				width: auto;
+				height: 130px;
+				float: right;
+				margin-top: -120px;
+			}
+		}
+}
+

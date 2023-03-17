@@ -1,1 +1,8 @@
 export const logo = require('./logo.png')
+export const vector = require('./Vector.png')
+export const image = require('./001.png')
+export const fire = require('./004.png')
+export const man = require('./man.svg')
+export const women = require('./women.svg')
+export const btm = require('./btm.svg')
+export const top = require('./icon.png')
